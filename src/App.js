@@ -1,11 +1,28 @@
 import './app.css';
+import React, { Component }from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Beginner Pokedex!</h1>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      pokemon: [],
+    }
+  }
+
+  componentDidMount() {
+    
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Beginner Pokedex!</h1>
+      </div>
+    );
+  }
+
+
 }
+
 
 export default App;
